@@ -1,13 +1,10 @@
-name: prod-build
+name: dev-build
 
 "on":
-#  pull_request:
-#    branches:
-#      - master
-#    types:
-#      - closed
-#    tags:
-#      - "*"
+  push:
+    branches-ignore:
+      - master
+  workflow_dispatch:
 
 jobs:
   build-and-push-image:
@@ -46,5 +43,5 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/thetaylorlee/piplogger:${{ env.tag }}
-            ghcr.io/thetaylorlee/piplogger:latest
+            ghcr.io/thetaylorlee/piplogger:develop-${{ env.tag }}
+            ghcr.io/thetaylorlee/piplogger:develop
