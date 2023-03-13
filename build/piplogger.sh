@@ -6,7 +6,7 @@ find '/piplogger/logs' -mtime +30 -exec rm {} \
 prev=""
 while true; do
     logdate=$(date +%Y-%m-%d)
-    cur=$(curl -sS https://ipinfo.io)
+    cur=$(wget -qO- ipinfo.io)
     if [ "$prev" != "$cur" ]; then
         prev="$cur"
         echo "$(date)
