@@ -15,3 +15,8 @@ services:
       - /home/user/docker/appdata/piplogger/logs:/piplogger/logs
     restart: unless-stopped
 ```
+
+- To log changes in the public ip egress of another container user add service VPN mode to the container.
+```yml
+    network_mode: service:<container name>
+```
