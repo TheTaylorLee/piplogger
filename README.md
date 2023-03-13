@@ -16,7 +16,7 @@ services:
     restart: unless-stopped
 ```
 
-- To log changes in the public ip egress of another container user add service VPN mode to the container.
+- To log changes in the public ip egress of another container, add the service network mode option to the compose file.
 ```yml
     network_mode: service:<container name>
 ```
