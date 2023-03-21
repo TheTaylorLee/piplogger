@@ -16,7 +16,7 @@ Explain the reasoning why this enhancement is wanted.
 
 **Code Sample**
 If you know how this could be done you might add a code example
-```PowerShell
+```sh
 #Add any code Samples here
 ```
 
