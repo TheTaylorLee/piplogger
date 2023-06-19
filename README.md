@@ -1,5 +1,5 @@
 # piplogger
-Log all changes public ip egress changes for observed by this container. The frequency of which the container checks is every 90 seconds. A limitation implemented due to api restrictions. This is useful for scenarios where the public ip might be dynamic and you wish to know the datetime that the ip has changed.
+Log all public ip egress changes observed by this container. The frequency of which the container checks is every 90 seconds. A limitation implemented due to api restrictions. This is useful for scenarios where the public ip might be dynamic and you wish to know the datetime that the ip has changed.
 
 
 ## Deploying the image
